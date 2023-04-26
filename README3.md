@@ -631,3 +631,4 @@ Este entorno no me funcionó y además rompió el de ESP-IDF.
   - [ ] DHT22
   - [ ] BME280
 tocado por Maria Claudia
+tocado por Maria Claudia
