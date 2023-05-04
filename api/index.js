@@ -43,8 +43,11 @@ app.use(express.static('spa/static'));
 const PORT = 8080;
 
 app.post('/measurement', function (req, res) {
--       console.log("device id    : " + req.body.id + " key         : " + req.body.key + " temperature : " + req.body.t + " humidity    : " + req.body.h);	
-    const {insertedId} = insertMeasurement({id:req.body.id, t:req.body.t, h:req.body.h});
+var date = new Date();
+const options = { timeZone : 'America/Argentina/Buenos_Aires' };
+const ts = date.toLocaleString( 'en-GB' , options );
+console.log("device id    : " + req.body.id + " key         : " + req.body.key + " temperature : " + req.body.t + " humidity    : " + req.body.h + ts);	
+    const {insertedId} = insertMeasurement({id:req.body.id, t:req.body.t, h:req.body.h, hora:ts});
 	res.send("received measurement into " +  insertedId);
 });
 
@@ -178,10 +181,10 @@ app.get('/admin/:command', function(req,res) {
 
 
 startDatabase().then(async() => {
-    await insertMeasurement({id:'00', t:'18', h:'78'});
-    await insertMeasurement({id:'00', t:'19', h:'77'});
-    await insertMeasurement({id:'00', t:'17', h:'77'});
-    await insertMeasurement({id:'01', t:'17', h:'77'});
+    await insertMeasurement({id:'00', t:'18', h:'78', hora: '2023/04/2023, 11:00:00'});
+    await insertMeasurement({id:'00', t:'19', h:'77', hora: '2023/04/2023, 12:00:00'});
+    await insertMeasurement({id:'00', t:'17', h:'77', hora: '2023/04/2023, 13:00:00'});
+    await insertMeasurement({id:'01', t:'17', h:'77', hora: '2023/04/2023, 14:00:00'});
     console.log("mongo measurement database Up");
 
     db.public.none("CREATE TABLE devices (device_id VARCHAR, name VARCHAR, key VARCHAR)");
