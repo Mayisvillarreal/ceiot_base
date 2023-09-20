@@ -23,30 +23,36 @@ Para retirar el paquete, la App envía un pedido de liberación, el broker, nuev
 ## Resolución
 
 Objetivo:
-Obtener el Código de apertura para retirar un paquete que se ha depositado en un locker antes de que el destinatario lo retire.
+Soy líder de una organización criminal dedicada al asesinato a sueldo, hemos sido contratados para liquidar un individuo, se trata de una persona que posee información confidencial y ha estado extorsionando a nuestro cliente, obligándolo a pagar fuertes sumas de dinero a cambio de su silencio.
+Las labores de espionaje realizadas advirtieron que el objetivo pasa la mayor parte del día en su domicilio, no tiene un horario claro de salidas, y cuando lo hace se moviliza en un auto blindado, además siempre está armado, lo cual lo convierte en un objetivo difícil. Sin embargo, también se detectó que el hombre pide la mayoría de sus comidas a domicilio, y frecuentemente, a pesar de estar en casa, prefiere usar el sistema de apertura de lockers instalado en el edificio en el que vive, que recibir la comida directamente al mensajero.
+Se decide aprovechar el uso de este sistema, obteniendo el código de apertura para manipular los alimentos del objetivo, aplicando en varias oportunidades dosis pequeñas de un veneno indetectable, causando una muerte lenta y silenciosa, que probablemente no sea investigada.
 
 1.	Reconnaissance
-•	Identifico el espacio físico en el que se encuentran los lockers y evalúo el nivel de dificultad para acceder a este 
-•	Reúno información sobre la App
-•	Mediante ofrecimiento de servicios, realización de encuestas o comprando la información, realizo un listado con números de teléfono y/o correos electrónicos de residentes con acceso al sistema de apertura de lockers 
+•	Espías detectan que el objetivo usa frecuentemente el sistema de control de apertura de lockers para recibir alimentos a domicilio.
+•	(T1589) Gather Victim Identity Information: Se recurre a la miembros de la administración del edificio fingiendo ser una empresa de lavandería para acceder al correo electrónico del objetivo y de otros residentes
+•	(T1598)Phishing for Information: Se usa principalmente para obtener información de otros residentes del edificio sobre la app del sistema de control de apertura de lockers.
+
 
 2.	Weaponization
-•	Puedo usar phishing buscando que los destinatarios revelen las credenciales de acceso a la App
+•	Puedo usar phishing buscando que la víctima revele las credenciales de acceso a la App
 •	Decido instalar una herramienta de administración remota en el dispositivo de la víctima, que me permita acceder a este en el momento correcto
 
 3.	Delivery
-•	Envío a todos los correos electrónicos que logré obtener, un mensaje para inscribirse a una rifa que se realizará entre los residentes, este contiene un link para descargar la herramienta mencionada en el punto anterior
+•	(T1456) Drive-By Compromise: Envío al correo electrónico del objetivo un mensaje para inscribirse a una rifa que se realizará entre los residentes del edificio, este contiene un link a un sitio web para descargar la herramienta mencionada en el punto anterior
 
 4.	Exploit
-•	Algunos residentes leen el correo electrónico y realizan los pasos esperados para la instalación de la herramienta de administración remota del dispositivo
+•	(T1577) Compromise Application Executable: El objetivo lee el correo electrónico y realiza los pasos esperados para la instalación de la herramienta de administración remota del dispositivo
 
 5.	Installation
-•	Envío a uno de mis secuaces a un lugar cercano a los lockers para que pueda observar cuando el mensajero deje los paquetes, yo alisto mi dispositivo y minutos después de que me sea notificada la apertura de un locker para dejar un paquete, accedo a la aplicación e ingreso a la herramienta y mediante esta a la App que controla la apertura de los lockers e identifico cuáles están ocupados.
+•	Envío a uno de mis secuaces a un lugar cercano a los lockers para que pueda observar cuando el mensajero deje el domicilio, yo alisto mi dispositivo y minutos después de que me sea notificada la apertura de un locker para dejar un paquete, accedo a la aplicación e ingreso a la herramienta, y mediante esta, a la App que controla la apertura de los lockers.
 
 6.	Command & Control
-•	Una vez sepa cuál o cuales lockers están ocupados, envió el pedido de liberación, de estos
+•	Una vez los alimentos sean depositados, espero a que mi cómplice se encuentre en posición para enviar el pedido de liberación 
+
 7.	Actions on Objectives
-•	Cuando tengo los códigos para liberar los lockers se los comunico a mi secuaz, quien rápidamente accede al lugar, retira el o los paquetes y escapa.
+•	Envío el pedido de liberación para que el locker abra, inmediatamente mi secuaz, vestido como domiciliario para no levantar sospechas, accede a los alimentos, rápida y cuidadosamente aplica una dosis de la sustancia mortal y escapa. Solicito un nuevo código de apertura del locker, para que este sea marcado como ocupado y la víctima obtenga el código de liberación.
+
+
 
  
 
