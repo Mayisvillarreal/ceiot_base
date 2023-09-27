@@ -41,10 +41,10 @@ Se decide aprovechar el uso de este sistema, obteniendo el código de apertura p
 •	(T1456) Drive-By Compromise: Envío al correo electrónico del objetivo un mensaje para inscribirse a una rifa que se realizará entre los residentes del edificio, este contiene un link a un sitio web para descargar la herramienta mencionada en el punto anterior
 
 4.	Exploit
-•	(T1577) Compromise Application Executable: El objetivo abre el correo electrónico y da click en el link malicioso 
+•	El objetivo abre el correo electrónico y da click en el link malicioso 
 
 5.	Installation
-•	Se abre el sitio web desde el cual se descarga la herramienta de administración remota y esta se instala en el dispositivo de la víctima.
+•	(T1577) Compromise Application Executable: Se abre el sitio web desde el cual se descarga la herramienta de administración remota y esta se instala en el dispositivo de la víctima.
 
 6.	Command & Control
 •	Envío a uno de mis secuaces a un lugar cercano a los lockers para que pueda observar cuando el mensajero deje el domicilio, yo alisto mi dispositivo y minutos después de que me sea notificada la apertura de un locker para dejar un paquete, accedo a la aplicación e ingreso a la herramienta, y mediante esta, a la App que controla la apertura de los lockers.
