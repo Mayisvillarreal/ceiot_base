@@ -44,7 +44,7 @@ Defensa: TBD
 
 Defensa: TBD
 
-Reconnaissance 
+1. Reconnaissance 
 • Espías detectan que el objetivo usa frecuentemente el sistema de control de apertura de lockers para recibir alimentos a domicilio.
 • (T1589) Gather Victim Identity Information: Se recurre a la miembros de la administración del edificio fingiendo ser una empresa de lavandería para acceder al correo electrónico del objetivo y de otros residentes 
 • (T1598)Phishing for Information: Se usa principalmente para obtener información de otros residentes del edificio sobre la app del sistema de control de apertura de lockers.
