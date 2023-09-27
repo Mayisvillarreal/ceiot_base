@@ -41,13 +41,14 @@ Se decide aprovechar el uso de este sistema, obteniendo el código de apertura p
 •	(T1456) Drive-By Compromise: Envío al correo electrónico del objetivo un mensaje para inscribirse a una rifa que se realizará entre los residentes del edificio, este contiene un link a un sitio web para descargar la herramienta mencionada en el punto anterior
 
 4.	Exploit
-•	(T1577) Compromise Application Executable: El objetivo lee el correo electrónico y realiza los pasos esperados para la instalación de la herramienta de administración remota del dispositivo
+•	(T1577) Compromise Application Executable: El objetivo abre el correo electrónico y da click en el link malicioso 
 
 5.	Installation
-•	Envío a uno de mis secuaces a un lugar cercano a los lockers para que pueda observar cuando el mensajero deje el domicilio, yo alisto mi dispositivo y minutos después de que me sea notificada la apertura de un locker para dejar un paquete, accedo a la aplicación e ingreso a la herramienta, y mediante esta, a la App que controla la apertura de los lockers.
+•	Se abre el sitio web desde el cual se descarga la herramienta de administración remota y esta se instala en el dispositivo de la víctima.
 
 6.	Command & Control
-•	Una vez los alimentos sean depositados, espero a que mi cómplice se encuentre en posición para enviar el pedido de liberación 
+•	Envío a uno de mis secuaces a un lugar cercano a los lockers para que pueda observar cuando el mensajero deje el domicilio, yo alisto mi dispositivo y minutos después de que me sea notificada la apertura de un locker para dejar un paquete, accedo a la aplicación e ingreso a la herramienta, y mediante esta, a la App que controla la apertura de los lockers.
+Una vez los alimentos sean depositados, espero a que mi cómplice se encuentre en posición para enviar el pedido de liberación 
 
 7.	Actions on Objectives
 •	Envío el pedido de liberación para que el locker abra, inmediatamente mi secuaz, vestido como domiciliario para no levantar sospechas, accede a los alimentos, rápida y cuidadosamente aplica una dosis de la sustancia mortal y escapa. Solicito un nuevo código de apertura del locker, para que este sea marcado como ocupado y la víctima obtenga el código de liberación.
