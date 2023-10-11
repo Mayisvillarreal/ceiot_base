@@ -30,15 +30,21 @@ Defensa:
 • (DS0042)Interfaz de usuario: La víctima detecta un funcionamiento anormal en su teléfono y decide investigar
 Técnica: https://attack.mitre.org/datasources/DS0042/
 
-•El equipo de vigilancia privada del edificio cuenta con una persona que revisa los videos de las cámaras de seguridad, prestando especial atención a la zona de lockers, el vigilante se percata de que un domiciliario accede a un compartimiento que había sido abierto minutos antes, esto no corresponde al funcionamiento normal del sistema, por lo cual alerta a los residentes, informado que sus domicilios pudieron ser manipulados.
+•El equipo de vigilancia privada del edificio cuenta con una persona que revisa los videos de las cámaras de seguridad, prestando especial atención a la zona de lockers, el vigilante se percata de que un domiciliario accede a un compartimiento que había sido abierto minutos antes, esto no corresponde al funcionamiento normal del sistema, por lo cual se alerta a los residentes, informado que sus domicilios pudieron ser manipulados.
 
 6.	Command & Control
 
 •	Uno de mis secuaces se ubica en un lugar cercano a los lockers con un teléfono celular desde el cual se comunica conmigo.
+
 •	Alisto mi dispositivo para acceder al sistema del teléfono de la víctima mediante el Troyano de acceso remoto
 
 
-Defensa: TBD
+Defensa: 
+
+•	La víctima se encuentra en casa y decide tomar directamente sus pedidos
+
+•	La víctima cambia su constraseña de acceso a la aplicación, por lo que no es posible acceder a pesar de tomar control del dispositivo
+
 
 5. Installation
 
@@ -56,12 +62,16 @@ Defensa: La víctima lee el correo electrónico pero antes de dar click en el li
 
 3. Delivery
 
-• (T1456) Drive-By Compromise: Envío al correo electrónico del objetivo un mensaje para inscribirse a una rifa que se realizará entre los residentes del edificio, este contiene un link a un sitio web para descargar la herramienta mencionada en el punto anterior
+• Técnica: https://attack.mitre.org/techniques/T0866/ 
+Envío al correo electrónico del objetivo un mensaje para inscribirse a una rifa que se realizará entre los residentes del edificio, este contiene un link a un sitio web para descargar la herramienta mencionada en el punto anterior
 
 Defensa: 
 
 •La víctima abre el correo electrónico desde su computador y el malware está diseñado para actuar sobre Android 
+
 •La víctima no abre el correo electrónico por ser de un remitente desconocido.
+
+
 
 2. Weaponization
  
@@ -69,7 +79,10 @@ Defensa:
 
 • Decido instalar una herramienta de administración remota en el dispositivo de la víctima, que me permita acceder a este en el momento correcto
 
-Defensa: TBD
+Defensa: (M1006) Use Recent OS Version
+https://attack.mitre.org/mitigations/M1006/
+El usuario ha instalado la última versión del sistema operativo, esta tiene una mejora que bloquea el uso del malware 
+
 
 1. Reconnaissance 
 • Espías detectan que el objetivo usa frecuentemente el sistema de control de apertura de lockers para recibir alimentos a domicilio.
