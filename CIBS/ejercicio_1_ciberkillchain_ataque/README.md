@@ -40,13 +40,15 @@ Técnica: https://attack.mitre.org/techniques/T1598/001/
 
 2.	Weaponization
    
-•	Puedo usar phishing buscando que la víctima revele las credenciales de acceso a la App
+•	(T1589.001) Gather Victim Identity Information/Credentials: Puedo usar phishing buscando que la víctima revele las credenciales de acceso a la App
+Técnica: https://attack.mitre.org/techniques/T1589/001/
 
 •	Decido instalar un Troyano de acceso remoto en el dispositivo de la víctima, que me permita acceder a este en el momento correcto
 
 3.	Delivery
    
 •	(T1456) Drive-By Compromise: Envío al correo electrónico del objetivo un mensaje para inscribirse a una rifa que se realizará entre los residentes del edificio, este contiene un link a un sitio web para descargar la herramienta mencionada en el punto anterior
+Técnica: https://attack.mitre.org/techniques/T1456/
 
 4.	Exploit
    
@@ -60,8 +62,8 @@ Técnica: https://attack.mitre.org/techniques/T1577/
 6.	Command & Control
     
 •	Uno de mis secuaces se ubica en un lugar cercano a los lockers con un teléfono celular desde el cual se comunica conmigo.
-•	Alisto mi dispositivo para acceder al sistema del móvil de la víctima mediante el Troyano de acceso remoto
-
+•	(T0866) Exploitation of Remote Services: Alisto mi dispositivo para acceder al sistema del móvil de la víctima mediante el Troyano de acceso remoto
+Técnica: https://attack.mitre.org/techniques/T0866/
 
 7.	Actions on Objectives
     
@@ -69,7 +71,8 @@ Técnica: https://attack.mitre.org/techniques/T1577/
 
 •Una vez los alimentos sean depositados en el locker, uso el troyano de acceso remoto para acceder al sistema del móvil de la víctima y desde allí ingresar a la app y solicitar la liberación del pedido.
 
-•Cuando obtengo el código de liberación se lo informo a mi cómplice y este inmediatamente accede a los alimentos, rápida y cuidadosamente aplica una dosis de la sustancia mortal, cierra el locker y me informa.
+• (T0866) Exploitation of Remote Services:Cuando obtengo el código de liberación se lo informo a mi cómplice y este inmediatamente accede a los alimentos, rápida y cuidadosamente aplica una dosis de la sustancia mortal, cierra el locker y me informa.
+Técnica: https://attack.mitre.org/techniques/T0866/
 
 •Una vez mi secuaz informa que ha hecho su trabajo, envío un nuevo pedido de liberación, le doy el código y salgo del sistema de la víctima para que este retome el control.
 
